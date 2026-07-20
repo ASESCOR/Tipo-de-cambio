@@ -47,13 +47,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/history.json
 
           if git diff --cached --quiet; then
-            echo "No existen cambios nuevos en el histórico."
+            echo "No existen cambios nuevos"
           else
             git commit -m "Actualizar cotizaciones cambiarias"
-            git push
+
+            echo "Sincronizando con la rama principal..."
+            git pull --rebase origin main
+
+            echo "Guardando el histórico actualizado..."
+            git push origin HEAD:main
           fi
 
       - name: Configurar GitHub Pages
