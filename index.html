@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Monitor cambiario de Bolivia: USDT/BOB, TCO, venta oficial, reservas, tipo de cambio real y base monetaria." />
+  <meta name="theme-color" content="#07182f" />
+  <title>Monitor Cambiario de Bolivia</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="img">
+            <path d="M7 25.5 17.4 15l6 6L33 11.4" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 11h6v6" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>
+          <strong>Bolivia FX</strong>
+          <small>Monitor cambiario</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#mercado">Mercado</a>
+        <a href="#liquidez">Liquidez</a>
+        <a href="#metodologia">Metodología</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="live-badge connection-loading" id="liveBadge">
+          <i></i>
+          <span id="liveBadgeText">Conectando</span>
+        </span>
+        <button class="icon-btn" id="themeButton" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Bolivia · Mercado cambiario</div>
+        <h1>Monitor cambiario<br><em>de Bolivia</em></h1>
+        <p>Seguimiento de las principales referencias del dólar, el mercado USDT/BOB y las variables monetarias que ayudan a entender su evolución.</p>
+        <div class="hero-meta">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Última actualización: <strong id="lastUpdated">—</strong>
+          </span>
+          <span class="demo-label" id="dataStatus">Conectando con las fuentes…</span>
+        </div>
+      </div>
+
+      <aside class="hero-insight" aria-label="Lectura rápida del mercado">
+        <div class="insight-top">
+          <span class="insight-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-7"/></svg>
+          </span>
+          <span>Lectura rápida</span>
+        </div>
+        <p id="marketSummary">Cargando lectura del mercado…</p>
+        <div class="insight-footer">
+          <span>Brecha USDT vs. venta oficial</span>
+          <strong id="heroGap">—</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container section" id="mercado">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Panorama actual</span>
+          <h2>Principales referencias</h2>
+        </div>
+        <div class="date-pills" aria-label="Periodo del gráfico">
+          <button data-period="7">7D</button>
+          <button data-period="30" class="active">30D</button>
+          <button data-period="90">90D</button>
+          <button data-period="365">1A</button>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <article class="kpi-card featured">
+          <div class="kpi-head">
+            <span class="kpi-icon crypto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12M9 4v3m6-3v3M8 7c0 7 8 2 8 7 0 3-2 4-5 4H7m6 0v2"/></svg></span>
+            <span class="status-pill positive" id="usdtChange">—</span>
+          </div>
+          <span class="kpi-label">USDT / BOB</span>
+          <div class="kpi-value"><span id="usdtValue">—</span><small> Bs/$us</small></div>
+          <p>Promedio entre compra y venta de Binance P2P.</p>
+          <div class="mini-chart" id="miniUsdt" aria-label="Tendencia USDT BOB"></div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-icon official"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18M5 10v8m4-8v8m6-8v8m4-8v8M3 20h18M12 3l9 5H3Z"/></svg></span>
+            <span class="source-label">DolarApi · BCB</span>
+          </div>
+          <span class="kpi-label">TCO</span>
+          <div class="kpi-value"><span id="tcoValue">—</span><small> Bs/$us</small></div>
+          <p>Cotización oficial de compra publicada por la fuente.</p>
+          <div class="kpi-detail"><span>Variación 30 días</span><strong id="tcoChange">—</strong></div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-icon sale"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span>
+            <span class="source-label">Referencia</span>
+          </div>
+          <span class="kpi-label">Venta oficial</span>
+          <div class="kpi-value"><span id="referenceValue">—</span><small> Bs/$us</small></div>
+          <p>Cotización oficial de venta publicada por la fuente.</p>
+          <div class="kpi-detail"><span>Margen sobre TCO</span><strong id="referenceMargin">—</strong></div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-icon gap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/><path d="M5 5h4M5 5v4M19 19h-4M19 19v-4"/></svg></span>
+            <span class="status-pill warning">Mercado</span>
+          </div>
+          <span class="kpi-label">Brecha cambiaria</span>
+          <div class="kpi-value"><span id="gapValue">—</span><small> %</small></div>
+          <p>Diferencia entre USDT/BOB y la venta oficial.</p>
+          <div class="kpi-detail"><span>Diferencia nominal</span><strong id="gapNominal">—</strong></div>
+        </article>
+      </div>
+
+      <div class="dashboard-grid">
+        <article class="panel chart-panel main-chart-panel">
+          <div class="panel-header">
+            <div>
+              <span class="panel-kicker">Evolución diaria</span>
+              <h3>Mercado y referencias cambiarias</h3>
+            </div>
+            <div class="legend">
+              <span><i class="legend-usdt"></i> USDT/BOB</span>
+              <span><i class="legend-ref"></i> Venta oficial</span>
+              <span><i class="legend-tco"></i> TCO</span>
+            </div>
+          </div>
+          <div class="chart-wrap">
+            <svg id="mainChart" viewBox="0 0 900 360" preserveAspectRatio="none" role="img" aria-label="Evolución comparada de tipos de cambio"></svg>
+            <div id="chartTooltip" class="chart-tooltip" hidden></div>
+          </div>
+          <div class="chart-footer">
+            <span><i></i> La escala se ajusta automáticamente al periodo seleccionado.</span>
+            <strong id="periodCaption">Últimos 30 días</strong>
+          </div>
+        </article>
+
+        <aside class="panel calculator-panel">
+          <div class="panel-header simple">
+            <div>
+              <span class="panel-kicker">Herramienta</span>
+              <h3>Calculadora cambiaria</h3>
+            </div>
+            <span class="calc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></span>
+          </div>
+          <label for="amountInput">Monto</label>
+          <div class="input-shell">
+            <input type="number" id="amountInput" min="0" step="0.01" value="1000" />
+            <select id="fromCurrency" aria-label="Moneda de origen">
+              <option value="BOB">BOB</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <label for="rateSelect">Tipo de cambio</label>
+          <select class="full-select" id="rateSelect">
+            <option value="usdt">USDT / BOB</option>
+            <option value="reference">Venta oficial</option>
+            <option value="tco">TCO</option>
+          </select>
+          <button class="swap-button" id="swapButton" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 3-3 3 3M10 4v12M17 17l-3 3-3-3M14 20V8"/></svg>
+            Invertir conversión
+          </button>
+          <div class="calc-result">
+            <span>Resultado estimado</span>
+            <strong id="conversionResult">—</strong>
+            <small id="conversionRate">—</small>
+          </div>
+          <p class="calc-note">Valor informativo. No constituye una cotización de compra o venta.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section liquidity-section" id="liquidez">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Contexto monetario</span>
+            <h2>Liquidez y competitividad</h2>
+          </div>
+          <p class="section-description">Variables que complementan la lectura del mercado cambiario y permiten observar presiones de fondo.</p>
+        </div>
+
+        <div class="macro-grid">
+          <article class="panel macro-card wide">
+            <div class="macro-top">
+              <div>
+                <span class="panel-kicker">Reservas internacionales</span>
+                <div class="macro-value"><strong id="reservesValue">—</strong><span>millones USD</span></div>
+              </div>
+              <span class="macro-change" id="reservesChange">—</span>
+            </div>
+            <div class="macro-chart" id="reservesChart"></div>
+            <div class="macro-footer"><span>Serie de referencia</span><strong id="reservesCaption">—</strong></div>
+          </article>
+
+          <article class="panel macro-card">
+            <div class="macro-top">
+              <div>
+                <span class="panel-kicker">Tipo de cambio real</span>
+                <div class="macro-value"><strong id="rerValue">—</strong><span>índice</span></div>
+              </div>
+              <span class="macro-badge">Base 100</span>
+            </div>
+            <div class="gauge" id="rerGauge">
+              <svg viewBox="0 0 220 120" role="img" aria-label="Indicador de tipo de cambio real">
+                <path class="gauge-track" d="M25 105a85 85 0 0 1 170 0"/>
+                <path class="gauge-value" id="gaugeValue" d="M25 105a85 85 0 0 1 170 0"/>
+              </svg>
+              <div class="gauge-center"><strong id="gaugeNumber">—</strong><small>Índice</small></div>
+            </div>
+            <p class="macro-copy" id="rerInterpretation">—</p>
+          </article>
+
+          <article class="panel macro-card">
+            <div class="macro-top">
+              <div>
+                <span class="panel-kicker">Base monetaria</span>
+                <div class="macro-value"><strong id="monetaryValue">—</strong><span>mil MM Bs</span></div>
+              </div>
+              <span class="macro-change" id="monetaryChange">—</span>
+            </div>
+            <div class="bars-chart" id="monetaryChart" aria-label="Evolución de la base monetaria"></div>
+            <div class="macro-footer"><span>Último dato</span><strong id="monetaryCaption">—</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="metodologia">
+      <div class="methodology">
+        <div class="method-copy">
+          <span class="section-kicker">Transparencia de datos</span>
+          <h2>Metodología y fuentes</h2>
+          <p>Las cotizaciones actuales se consultan desde DolarApi. El histórico diario se guarda en <code>data/history.json</code> mediante GitHub Actions. Las reservas, el tipo de cambio real y la base monetaria continúan como series manuales de ejemplo hasta conectarlas con una fuente oficial.</p>
+        </div>
+        <div class="source-grid">
+          <div class="source-item"><span>01</span><div><strong>Binance P2P</strong><small>Promedio entre las referencias de compra y venta entregadas por DolarApi.</small></div></div>
+          <div class="source-item"><span>02</span><div><strong>Dólar oficial</strong><small>Compra y venta oficial según la fuente del Banco Central de Bolivia.</small></div></div>
+          <div class="source-item"><span>03</span><div><strong>Histórico diario</strong><small>Archivo JSON actualizado y publicado automáticamente mediante GitHub Actions.</small></div></div>
+          <div class="source-item"><span>04</span><div><strong>Uso informativo</strong><small>No reemplaza una cotización bancaria, financiera u oficial.</small></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 25.5 17.4 15l6 6L33 11.4" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 11h6v6" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>Bolivia FX</strong><small>Monitor cambiario</small></span>
+      </div>
+      <p>Cotizaciones cambiarias consultadas en línea. Las variables macroeconómicas señaladas como series manuales deben validarse antes de su uso.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
