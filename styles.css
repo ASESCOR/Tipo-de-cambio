@@ -319,3 +319,25 @@ body.dark .moon-icon { display: block; }
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: .45; transform: scale(.82); }
 }
+/* Calculadora sin gráfico de evolución diaria */
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.calculator-panel-centered {
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (max-width: 768px) {
+  .calculator-container {
+    margin-top: 22px;
+  }
+
+  .calculator-panel-centered {
+    max-width: 100%;
+  }
+}
