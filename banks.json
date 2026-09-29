@@ -1,0 +1,83 @@
+{
+  "updatedAt": "2026-09-29T06:59:00-04:00",
+  "note": "Precios de venta de referencia publicados por cada entidad. El valor en ventanilla puede ser distinto.",
+  "banks": [
+    {
+      "name": "Banco FIE",
+      "short": "FIE",
+      "rate": 12.02,
+      "brand": "#df1683",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12.12,
+      "brand": "#f59e0b",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Ganadero",
+      "short": "GAN",
+      "rate": 12.12,
+      "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Unión",
+      "short": "UNI",
+      "rate": 12.15,
+      "brand": "#005aa9",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "BancoSol",
+      "short": "SOL",
+      "rate": 12.15,
+      "brand": "#6f2da8",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco de Crédito BCP",
+      "short": "BCP",
+      "rate": 12.32,
+      "brand": "#0055b8",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Nacional de Bolivia",
+      "short": "BNB",
+      "rate": 12.32,
+      "brand": "#149b49",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Económico",
+      "short": "ECO",
+      "rate": 12.32,
+      "brand": "#ef3340",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Mercantil Santa Cruz",
+      "short": "BMSC",
+      "rate": 12.32,
+      "brand": "#6b8e23",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Bisa",
+      "short": "BISA",
+      "rate": 12.15,
+      "brand": "#f2c500",
+      "ink": "#222222"
+    },
+    {
+      "name": "Banco Prodem",
+      "short": "PRO",
+      "rate": 12.27,
+      "brand": "#f4b000",
+      "ink": "#18202b"
+    }
+  ]
+}
