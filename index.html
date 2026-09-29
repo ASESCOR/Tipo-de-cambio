@@ -3,136 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cotización del dólar en Bolivia: referencia Binance P2P, tipo de cambio oficial, brecha cambiaria, convertidor e histórico." />
+  <meta name="description" content="Monitor del dólar y USDT/BOB en Bolivia con referencias P2P, tipo de cambio oficial, bancos, otras divisas, convertidor e histórico." />
   <meta name="theme-color" content="#ffffff" />
-  <title>Dólar Bolivia | Cotización y tipo de cambio</title>
+  <title>Bolivia FX | Cotización del dólar y USDT/BOB</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
+  <header class="topbar" id="inicio">
+    <div class="page-shell topbar-inner">
       <a class="brand" href="#inicio" aria-label="Bolivia FX - Inicio">
-        <span class="brand-icon">Bs</span>
+        <span class="brand-icon" aria-hidden="true">⇄</span>
         <span class="brand-copy">
           <strong>Bolivia FX</strong>
-          <small>Cotización del dólar</small>
+          <small>Lecturas de mercado USDT/BOB</small>
         </span>
       </a>
 
       <nav class="main-nav" aria-label="Navegación principal">
         <a href="#cotizacion">Cotización</a>
-        <a href="#oficial">Oficial BCB</a>
-        <a href="#convertidor">Convertidor</a>
+        <a href="#exchanges">Exchanges</a>
+        <a href="#bancos">Bancos</a>
+        <a href="#divisas">Divisas</a>
         <a href="#tendencia">Tendencia</a>
-        <a href="#fuentes">Fuentes</a>
       </nav>
 
-      <div class="live-chip" id="liveChip">
+      <div class="verified-chip" id="liveChip">
         <span class="live-dot"></span>
-        <span id="liveText">Conectando</span>
+        <span id="liveText">Conectando…</span>
       </div>
     </div>
   </header>
 
-  <main id="inicio">
-    <section class="hero" id="cotizacion">
-      <div class="container hero-inner">
-        <div class="hero-heading">
-          <p class="eyebrow">Dólar paralelo en Bolivia</p>
-          <h1>Cotización del dólar en Bolivia hoy</h1>
-          <p class="hero-subtitle">Referencia USDT/BOB basada en Binance P2P y comparación con el tipo de cambio oficial.</p>
+  <main>
+    <section class="hero-section" id="cotizacion">
+      <div class="page-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Dólar paralelo en Bolivia · Hoy</p>
+          <h1>¿A cuánto está el dólar en Bolivia?</h1>
+          <p class="hero-lead">Referencia USDT/BOB basada en Binance P2P, comparada con la cotización oficial.</p>
         </div>
 
-        <div class="quote-card">
-          <div class="quote-header">
+        <div class="market-hero-card">
+          <div class="market-card-head">
             <div>
-              <span class="quote-kicker">Binance P2P · USDT/BOB</span>
-              <strong class="quote-title">Cotización paralela</strong>
+              <span class="mini-label">USDT / BOB</span>
+              <h2>Cotización paralela</h2>
             </div>
-            <span class="verified-badge">Lectura verificada</span>
+            <span class="status-badge">Lectura verificada</span>
           </div>
 
-          <div class="quote-grid">
-            <div class="quote-block buy">
-              <span class="quote-label">Compra</span>
-              <strong><small>Bs</small> <span id="p2pBuy">—</span></strong>
-              <span class="quote-help">Referencia de compra</span>
+          <div class="big-quotes">
+            <div class="big-quote buy-quote">
+              <span>Compra</span>
+              <strong><small>Bs</small> <b id="p2pBuy">—</b></strong>
+              <em>Referencia de compra</em>
             </div>
-            <div class="quote-divider" aria-hidden="true"></div>
-            <div class="quote-block sell">
-              <span class="quote-label">Venta</span>
-              <strong><small>Bs</small> <span id="p2pSell">—</span></strong>
-              <span class="quote-help">Referencia de venta</span>
+            <div class="big-quote sell-quote">
+              <span>Venta</span>
+              <strong><small>Bs</small> <b id="p2pSell">—</b></strong>
+              <em>Referencia de venta</em>
             </div>
           </div>
 
-          <div class="quote-meta">
+          <div class="market-card-foot">
             <span>Actualizado: <strong id="lastUpdated">—</strong></span>
             <span>Fuente: <strong>Binance P2P vía DolarApi</strong></span>
           </div>
+        </div>
+
+        <div class="quick-stats">
+          <article>
+            <span>Oficial compra</span>
+            <strong>Bs <b id="officialBuy">—</b></strong>
+          </article>
+          <article>
+            <span>Oficial venta</span>
+            <strong>Bs <b id="officialSell">—</b></strong>
+          </article>
+          <article>
+            <span>Brecha</span>
+            <strong id="gapPct">—</strong>
+            <small id="gapText">vs. venta oficial</small>
+          </article>
+          <article>
+            <span>Promedio P2P</span>
+            <strong>Bs <b id="p2pAverage">—</b></strong>
+            <small id="p2pSpread">Spread: —</small>
+          </article>
         </div>
 
         <p class="market-note" id="marketNote">Consultando cotizaciones actuales…</p>
       </div>
     </section>
 
-    <section class="section" id="oficial">
-      <div class="container">
-        <div class="section-heading compact-heading">
+    <section class="section-block" id="exchanges">
+      <div class="page-shell">
+        <div class="section-title-row center-title-row">
           <div>
-            <p class="eyebrow">Referencia oficial</p>
-            <h2>Tipo de cambio oficial</h2>
+            <h2>Exchanges Digitales <span class="bolt">ϟ</span></h2>
+            <p>Referencias USDT/BOB organizadas por plataforma.</p>
           </div>
-          <span class="source-tag">Fuente BCB vía DolarApi</span>
+          <span class="read-chip" id="exchangesUpdated">Lectura manual: —</span>
         </div>
 
-        <div class="official-grid">
-          <article class="stat-card">
-            <span class="stat-label">Compra oficial</span>
-            <strong class="stat-value"><small>Bs</small> <span id="officialBuy">—</span></strong>
-            <span class="stat-foot">Por 1 USD</span>
-          </article>
+        <div class="section-pill">PLATAFORMAS DESTACADAS</div>
+        <div class="exchange-featured-grid" id="featuredExchanges"></div>
+        <p class="section-note" id="exchangeNote">Las cotizaciones son referenciales y pueden variar según monto, método y liquidez.</p>
 
-          <article class="stat-card">
-            <span class="stat-label">Venta oficial</span>
-            <strong class="stat-value"><small>Bs</small> <span id="officialSell">—</span></strong>
-            <span class="stat-foot">Por 1 USD</span>
-          </article>
+        <div class="section-pill secondary-pill">OTRAS PLATAFORMAS</div>
+        <div class="exchange-other-grid" id="otherExchanges"></div>
+      </div>
+    </section>
 
-          <article class="stat-card accent-card">
-            <span class="stat-label">Brecha paralela vs. oficial</span>
-            <strong class="stat-value"><span id="gapPct">—</span><small>%</small></strong>
-            <span class="stat-foot" id="gapText">Comparación sobre la venta oficial</span>
-          </article>
+    <section class="section-block bank-section" id="bancos">
+      <div class="page-shell bank-layout">
+        <div class="bank-intro">
+          <p class="eyebrow">Dólar en bancos · Hoy</p>
+          <h2>¿A cuánto te vende <span>tu banco?</span></h2>
+          <p>Comparación de precios de venta publicados por entidades financieras frente a la referencia oficial.</p>
+          <span class="bank-official-label">Oficial usado como base</span>
+          <strong class="bank-official-value" id="bankOfficial">—</strong>
+          <a class="primary-button" href="#bancos-lista">Ver detalle por banco →</a>
+        </div>
 
-          <article class="stat-card">
-            <span class="stat-label">Promedio P2P</span>
-            <strong class="stat-value"><small>Bs</small> <span id="p2pAverage">—</span></strong>
-            <span class="stat-foot" id="p2pSpread">Spread compra/venta: —</span>
-          </article>
+        <div class="bank-comparison" id="bancos-lista">
+          <div id="bankRows"></div>
+          <div class="bank-foot">
+            <span id="bankNote">Precios publicados por cada banco; pueden variar por canal.</span>
+            <span id="banksUpdated">Lectura manual: —</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section soft-section" id="convertidor">
-      <div class="container two-column">
-        <div class="section-intro">
-          <p class="eyebrow">Herramienta</p>
+    <section class="section-block converter-section" id="convertidor">
+      <div class="page-shell converter-layout">
+        <div class="converter-copy">
+          <p class="eyebrow">Herramientas de conversión</p>
           <h2>Calculadora de divisas</h2>
-          <p>Convertí rápidamente entre bolivianos y dólares utilizando la referencia P2P o el tipo de cambio oficial.</p>
-          <div class="quick-amounts" aria-label="Montos frecuentes">
+          <p>Convertí entre bolivianos y dólares con la tasa P2P o la referencia oficial.</p>
+          <div class="quick-amounts">
+            <button type="button" data-quick="10">10</button>
             <button type="button" data-quick="50">50</button>
             <button type="button" data-quick="100">100</button>
             <button type="button" data-quick="500">500</button>
-            <button type="button" data-quick="1000">1.000</button>
           </div>
         </div>
 
         <div class="converter-card">
-          <div class="converter-row">
+          <div class="converter-field">
             <label for="amountInput">Desde</label>
-            <div class="input-group">
+            <div class="input-shell">
               <input type="number" id="amountInput" min="0" step="0.01" value="100" />
               <select id="fromCurrency" aria-label="Moneda de origen">
                 <option value="USD">USD</option>
@@ -141,18 +163,18 @@
             </div>
           </div>
 
-          <button class="swap-btn" type="button" id="swapButton" aria-label="Invertir conversión">⇅</button>
+          <button class="swap-button" id="swapButton" type="button" aria-label="Invertir conversión">⇅</button>
 
-          <div class="converter-row">
+          <div class="converter-field">
             <label>Hacia</label>
-            <div class="input-group output-group">
+            <div class="input-shell output-shell">
               <input type="text" id="resultInput" value="—" readonly />
               <span id="toCurrency">BOB</span>
             </div>
           </div>
 
-          <div class="rate-selector">
-            <label for="rateSelect">Tasa utilizada</label>
+          <div class="rate-picker">
+            <label for="rateSelect">Tasa de cambio</label>
             <select id="rateSelect">
               <option value="p2pSell">P2P · Venta</option>
               <option value="p2pBuy">P2P · Compra</option>
@@ -161,70 +183,38 @@
             </select>
           </div>
 
-          <div class="rate-line">
+          <div class="conversion-rate-line">
             <span>Tipo de cambio</span>
             <strong id="conversionRate">—</strong>
           </div>
-          <p class="legal-note">Valor referencial. La tasa final puede variar según la plataforma, monto, contraparte o canal utilizado.</p>
+          <p class="legal-note">Valor informativo. La tasa final puede variar según plataforma, banco, monto o canal.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="tendencia">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Histórico diario</p>
-            <h2>Tendencia USDT/BOB</h2>
-            <p class="heading-copy">Comparación del promedio P2P guardado diariamente frente a la venta oficial.</p>
-          </div>
-          <div class="period-pills" aria-label="Periodo del gráfico">
-            <button type="button" data-period="7">7D</button>
-            <button type="button" data-period="30" class="active">30D</button>
-            <button type="button" data-period="90">90D</button>
-            <button type="button" data-period="365">1A</button>
-            <button type="button" data-period="max">MAX</button>
-          </div>
-        </div>
-
-        <div class="chart-card">
-          <div class="chart-summary">
+    <section class="section-block" id="divisas">
+      <div class="page-shell">
+        <div class="white-panel currencies-panel">
+          <div class="panel-title-inline">
+            <span class="money-square">$</span>
             <div>
-              <span>Último promedio P2P</span>
-              <strong id="chartP2p">—</strong>
+              <h2>Otras Divisas</h2>
+              <p>Equivalencias internacionales y estimación en bolivianos usando la referencia P2P de venta.</p>
             </div>
-            <div>
-              <span>Última venta oficial</span>
-              <strong id="chartOfficial">—</strong>
-            </div>
-            <div>
-              <span>Brecha</span>
-              <strong id="chartGap">—</strong>
-            </div>
+            <span class="read-chip" id="fxStatus">Actualizando…</span>
           </div>
 
-          <div class="chart-legend">
-            <span><i class="legend-p2p"></i> P2P promedio</span>
-            <span><i class="legend-official"></i> Venta oficial</span>
-          </div>
-
-          <div class="chart-wrap">
-            <svg id="historyChart" viewBox="0 0 960 360" preserveAspectRatio="none" role="img" aria-label="Tendencia histórica del dólar en Bolivia"></svg>
-            <div class="chart-tooltip" id="chartTooltip" hidden></div>
-          </div>
-
-          <div class="table-wrap">
-            <table>
+          <div class="currency-table-wrap">
+            <table class="currency-table">
               <thead>
                 <tr>
-                  <th>Fecha</th>
-                  <th>P2P promedio</th>
-                  <th>Oficial venta</th>
-                  <th>Brecha</th>
+                  <th>Moneda</th>
+                  <th>1 USD equivale a:</th>
+                  <th>1 Unidad en BOB</th>
                 </tr>
               </thead>
-              <tbody id="historyTableBody">
-                <tr><td colspan="4">Cargando histórico…</td></tr>
+              <tbody id="currencyTableBody">
+                <tr><td colspan="3">Cargando divisas…</td></tr>
               </tbody>
             </table>
           </div>
@@ -232,66 +222,77 @@
       </div>
     </section>
 
-    <section class="section soft-section" id="fuentes">
-      <div class="container">
-        <div class="section-heading compact-heading">
+    <section class="section-block trend-section" id="tendencia">
+      <div class="page-shell">
+        <div class="trend-header">
           <div>
-            <p class="eyebrow">Transparencia</p>
-            <h2>Fuentes y metodología</h2>
+            <h2>Tendencia USDT/BOB</h2>
+            <div class="series-tabs" role="group" aria-label="Series del gráfico">
+              <button type="button" data-series="p2p">P2P</button>
+              <button type="button" data-series="official">Oficial</button>
+              <button type="button" data-series="both" class="active">Los dos</button>
+              <button type="button" data-series="table">Tabla</button>
+            </div>
+          </div>
+
+          <div class="trend-kpis">
+            <div><span>P2P</span><strong id="chartP2p">—</strong></div>
+            <div><span>OFICIAL</span><strong id="chartOfficial">—</strong></div>
+            <div><span>BRECHA</span><strong id="chartGap">—</strong></div>
+            <div><span>CAMBIO</span><strong id="chartChange">—</strong></div>
           </div>
         </div>
 
-        <div class="sources-grid">
-          <article class="source-card">
-            <span class="source-number">01</span>
-            <h3>Binance P2P</h3>
-            <p>La referencia paralela se obtiene de la cotización de Binance P2P publicada por DolarApi.</p>
-          </article>
-          <article class="source-card">
-            <span class="source-number">02</span>
-            <h3>Banco Central de Bolivia</h3>
-            <p>La compra y venta oficial se consulta mediante el endpoint boliviano de DolarApi con fuente BCB.</p>
-          </article>
-          <article class="source-card">
-            <span class="source-number">03</span>
-            <h3>Histórico propio</h3>
-            <p>GitHub Actions guarda una lectura diaria en <code>data/history.json</code> para construir la tendencia.</p>
-          </article>
-          <article class="source-card">
-            <span class="source-number">04</span>
-            <h3>Uso informativo</h3>
-            <p>Las cifras son referenciales y no sustituyen una cotización bancaria, financiera o contractual.</p>
-          </article>
+        <div class="trend-toolbar">
+          <div class="period-pills" aria-label="Periodo del gráfico">
+            <button type="button" data-period="1">24H</button>
+            <button type="button" data-period="7">7D</button>
+            <button type="button" data-period="30" class="active">30D</button>
+            <button type="button" data-period="90">90D</button>
+            <button type="button" data-period="180">180D</button>
+            <button type="button" data-period="365">1A</button>
+            <button type="button" data-period="max">MAX</button>
+          </div>
+          <span class="range-caption" id="rangeCaption">Últimos 30 días · 1 punto por día</span>
+        </div>
+
+        <div class="trend-card">
+          <div class="chart-legend" id="chartLegend">
+            <span class="legend-p2p-row"><i class="legend-p2p"></i> P2P promedio</span>
+            <span class="legend-official-row"><i class="legend-official"></i> Oficial venta</span>
+          </div>
+          <div class="chart-wrap" id="chartPanel">
+            <svg id="historyChart" viewBox="0 0 1200 360" preserveAspectRatio="none" role="img" aria-label="Tendencia histórica USDT BOB"></svg>
+            <div class="chart-tooltip" id="chartTooltip" hidden></div>
+          </div>
+
+          <div class="table-wrap history-table-panel" id="historyTablePanel" hidden>
+            <table>
+              <thead><tr><th>Fecha</th><th>P2P</th><th>Oficial</th><th>Brecha</th></tr></thead>
+              <tbody id="historyTableBody"><tr><td colspan="4">Cargando histórico…</td></tr></tbody>
+            </table>
+          </div>
+
+          <div class="trend-summary-text" id="trendSummary">El histórico se completa con las lecturas diarias guardadas por GitHub Actions.</div>
         </div>
       </div>
     </section>
 
-    <section class="section faq-section">
-      <div class="container narrow-container">
-        <p class="eyebrow">Respuestas directas</p>
-        <h2>Preguntas frecuentes</h2>
-        <details>
-          <summary>¿Qué representa la cotización P2P?</summary>
-          <p>Es una referencia de compra y venta de USDT frente al boliviano en Binance P2P. Puede variar según monto, medio de pago y contraparte.</p>
-        </details>
-        <details>
-          <summary>¿Qué diferencia hay con el tipo de cambio oficial?</summary>
-          <p>La referencia oficial proviene del Banco Central de Bolivia, mientras que la P2P refleja operaciones entre participantes de un mercado digital.</p>
-        </details>
-        <details>
-          <summary>¿Cada cuánto se actualiza esta página?</summary>
-          <p>Mientras la página está abierta, consulta las cotizaciones actuales cada cinco minutos. Además, GitHub Actions registra una lectura diaria para el histórico.</p>
-        </details>
+    <section class="section-block methodology-section" id="fuentes">
+      <div class="page-shell">
+        <div class="methodology-grid">
+          <article><span>01</span><h3>Datos en vivo</h3><p>Binance P2P y tipo de cambio oficial consultados mediante DolarApi.</p></article>
+          <article><span>02</span><h3>Exchanges y bancos</h3><p>Se muestran desde archivos JSON manuales con su propia fecha de lectura para evitar presentar datos antiguos como tiempo real.</p></article>
+          <article><span>03</span><h3>Otras divisas</h3><p>Se intenta consultar una fuente pública internacional; si no responde, se muestran valores de respaldo identificados como tales.</p></article>
+          <article><span>04</span><h3>Uso informativo</h3><p>Las cifras son referenciales y deben verificarse en la fuente antes de realizar una operación.</p></article>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Bolivia FX</strong>
-        <p>Monitor informativo de cotizaciones del dólar en Bolivia.</p>
-      </div>
+    <div class="page-shell footer-inner">
+      <div><strong>Bolivia FX</strong><p>Monitor informativo del mercado cambiario boliviano.</p></div>
       <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
@@ -299,4 +300,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
