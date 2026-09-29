@@ -2,11 +2,13 @@ name: Actualizar y publicar monitor cambiario
 
 on:
   workflow_dispatch:
+
   push:
     branches:
       - main
+
   schedule:
-    - cron: "47 23 * * *"
+    - cron: "17 */2 * * *"
       timezone: "America/La_Paz"
 
 permissions:
@@ -15,58 +17,77 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "github-pages"
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
   update-and-deploy:
+    # Evita que el commit automático cree otra ejecución idéntica.
+    if: github.actor != 'github-actions[bot]'
+
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+
       - name: Descargar el repositorio
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: "22"
 
-      - name: Consultar cotizaciones y actualizar el histórico
-        id: update
-        continue-on-error: true
+      # -----------------------------------------
+      # COTIZACIÓN GENERAL + HISTÓRICO
+      # -----------------------------------------
+
+      - name: Actualizar cotizaciones e histórico
         run: node scripts/update-data.mjs
 
-      - name: Advertir si la API no respondió
-        if: steps.update.outcome == 'failure'
-        run: echo "::warning::No se actualizó data/history.json; se publicará el último dato disponible."
+      # -----------------------------------------
+      # BANCOS
+      # -----------------------------------------
 
-      - name: Guardar el histórico actualizado
+      - name: Actualizar precios de bancos
+        run: node scripts/update-banks.mjs
+
+      # -----------------------------------------
+      # GUARDAR LOS DATOS
+      # -----------------------------------------
+
+      - name: Guardar datos actualizados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/history.json
+          git add data/banks.json
 
           if git diff --cached --quiet; then
-            echo "No existen cambios nuevos"
+            echo "No existen cambios nuevos para guardar."
           else
-            git commit -m "Actualizar cotizaciones cambiarias"
+            git commit -m "Actualizar cotizaciones y bancos"
 
             echo "Sincronizando con la rama principal..."
             git pull --rebase origin main
 
-            echo "Guardando el histórico actualizado..."
+            echo "Guardando datos actualizados..."
             git push origin HEAD:main
           fi
+
+      # -----------------------------------------
+      # GITHUB PAGES
+      # -----------------------------------------
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Preparar los archivos del sitio
-        uses: actions/upload-pages-artifact@v4
+      - name: Preparar archivos del sitio
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "."
 
