@@ -1,0 +1,88 @@
+{
+  "updatedAt": "2026-09-29T09:45:00-04:00",
+  "note": "Cotizaciones manuales de referencia. Verificar en cada plataforma antes de operar.",
+  "featured": [
+    {
+      "name": "El Dorado",
+      "short": "ED",
+      "domain": "eldorado.io",
+      "url": "https://eldorado.io/",
+      "brand": "#ffd800",
+      "ink": "#111111",
+      "average": 11.97,
+      "buy": 12.04,
+      "sell": 11.90
+    },
+    {
+      "name": "Bitget Wallet",
+      "short": "BG",
+      "domain": "bitget.com",
+      "url": "https://www.bitget.com/",
+      "brand": "#22d3ee",
+      "ink": "#06202a",
+      "average": 12.18,
+      "buy": 12.35,
+      "sell": 12.00
+    },
+    {
+      "name": "Takenos",
+      "short": "TK",
+      "domain": "takenos.com",
+      "url": "https://takenos.com/",
+      "brand": "#7c3aed",
+      "ink": "#ffffff",
+      "average": 12.11,
+      "buy": 12.37,
+      "sell": 11.86
+    },
+    {
+      "name": "Airtm",
+      "short": "AT",
+      "domain": "airtm.com",
+      "url": "https://www.airtm.com/",
+      "brand": "#2563eb",
+      "ink": "#ffffff",
+      "average": 11.98,
+      "buy": 12.24,
+      "sell": 11.72
+    }
+  ],
+  "other": [
+    {
+      "name": "Wallbit",
+      "short": "WB",
+      "domain": "wallbit.io",
+      "brand": "#2563eb",
+      "ink": "#ffffff",
+      "buy": 12.18,
+      "sell": 11.83
+    },
+    {
+      "name": "Binance P2P",
+      "short": "BN",
+      "domain": "binance.com",
+      "brand": "#f3ba2f",
+      "ink": "#111111",
+      "buy": 12.02,
+      "sell": 11.98
+    },
+    {
+      "name": "Bybit P2P",
+      "short": "BY",
+      "domain": "bybit.com",
+      "brand": "#f59e0b",
+      "ink": "#111111",
+      "buy": 11.99,
+      "sell": 11.98
+    },
+    {
+      "name": "SaldoAr",
+      "short": "SA",
+      "domain": "saldoar.com",
+      "brand": "#10b981",
+      "ink": "#ffffff",
+      "buy": 12.24,
+      "sell": 11.90
+    }
+  ]
+}
