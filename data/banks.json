@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-30T12:37:28.877Z",
-  "sourceReadAt": "30/09, 07:36",
+  "updatedAt": "2026-09-30T19:22:11.996Z",
+  "sourceReadAt": "30/09, 14:47",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -17,9 +17,9 @@
     {
       "name": "Banco Unión",
       "short": "UNI",
-      "rate": 12.12,
+      "rate": 12.22,
       "buy": 11.02,
-      "difference": 0.1,
+      "difference": 0.2,
       "brand": "#005aa9",
       "ink": "#ffffff"
     },
