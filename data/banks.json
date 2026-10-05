@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-04T23:11:52.750Z",
-  "sourceReadAt": "04/10, 18:33",
+  "updatedAt": "2026-10-05T05:43:42.265Z",
+  "sourceReadAt": "05/10, 01:38",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -9,7 +9,7 @@
       "name": "Banco FIE",
       "short": "FIE",
       "rate": 12,
-      "buy": 11.5,
+      "buy": 11.1,
       "difference": 0,
       "brand": "#df1683",
       "ink": "#ffffff"
