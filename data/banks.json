@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-07T01:33:46.216Z",
-  "sourceReadAt": "06/10, 21:07",
+  "updatedAt": "2026-10-07T08:41:29.704Z",
+  "sourceReadAt": "07/10, 04:11",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -90,7 +90,7 @@
       "name": "Banco Económico",
       "short": "ECO",
       "rate": 12.32,
-      "buy": 11.27,
+      "buy": 11.07,
       "difference": 0.35,
       "brand": "#ef3340",
       "ink": "#ffffff"
