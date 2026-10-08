@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-08T06:07:33.394Z",
-  "sourceReadAt": "08/10, 01:59",
+  "updatedAt": "2026-10-08T13:32:55.370Z",
+  "sourceReadAt": "08/10, 09:04",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -51,12 +51,30 @@
       "ink": "#222222"
     },
     {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12.15,
+      "buy": 11.55,
+      "difference": 0.3,
+      "brand": "#f59e0b",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco Ganadero",
       "short": "GAN",
       "rate": 12.15,
       "buy": null,
       "difference": 0.3,
       "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "BancoSol",
+      "short": "SOL",
+      "rate": 12.15,
+      "buy": 10.67,
+      "difference": 0.3,
+      "brand": "#6f2da8",
       "ink": "#ffffff"
     },
     {
@@ -75,24 +93,6 @@
       "buy": 10.85,
       "difference": 0.35,
       "brand": "#ef3340",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
-      "rate": 12.27,
-      "buy": 11.67,
-      "difference": 0.42,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "BancoSol",
-      "short": "SOL",
-      "rate": 12.27,
-      "buy": 10.77,
-      "difference": 0.42,
-      "brand": "#6f2da8",
       "ink": "#ffffff"
     }
   ]
