@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-09T22:40:17.659Z",
-  "sourceReadAt": "09/10, 18:25",
+  "updatedAt": "2026-10-10T05:55:09.658Z",
+  "sourceReadAt": "10/10, 01:28",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,17 +8,17 @@
     {
       "name": "Banco FIE",
       "short": "FIE",
-      "rate": 11.95,
-      "buy": 10.95,
-      "difference": 0.1,
+      "rate": 11.93,
+      "buy": 10.83,
+      "difference": 0.2,
       "brand": "#df1683",
       "ink": "#ffffff"
     },
     {
       "name": "BCP",
       "short": "BCP",
-      "rate": 12.15,
-      "buy": 11.35,
+      "rate": 12.03,
+      "buy": 11.23,
       "difference": 0.3,
       "brand": "#0055b8",
       "ink": "#ffffff"
@@ -26,8 +26,8 @@
     {
       "name": "BNB",
       "short": "BNB",
-      "rate": 12.15,
-      "buy": 11.35,
+      "rate": 12.03,
+      "buy": 11.23,
       "difference": 0.3,
       "brand": "#149b49",
       "ink": "#ffffff"
@@ -35,28 +35,37 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 12.15,
-      "buy": 11.15,
+      "rate": 12.03,
+      "buy": 11.03,
       "difference": 0.3,
       "brand": "#f2c500",
       "ink": "#222222"
+    },
+    {
+      "name": "Banco Ganadero",
+      "short": "GAN",
+      "rate": 12.03,
+      "buy": null,
+      "difference": 0.3,
+      "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Mercantil Santa Cruz",
+      "short": "BMSC",
+      "rate": 12.03,
+      "buy": 10.63,
+      "difference": 0.3,
+      "brand": "#6b8e23",
+      "ink": "#ffffff"
     },
     {
       "name": "Banco Fortaleza",
       "short": "FOR",
       "rate": 12.15,
       "buy": 11.55,
-      "difference": 0.3,
+      "difference": 0.42,
       "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Ganadero",
-      "short": "GAN",
-      "rate": 12.15,
-      "buy": null,
-      "difference": 0.3,
-      "brand": "#3f7f2f",
       "ink": "#ffffff"
     },
     {
@@ -64,7 +73,7 @@
       "short": "UNI",
       "rate": 12.15,
       "buy": 10.85,
-      "difference": 0.3,
+      "difference": 0.42,
       "brand": "#005aa9",
       "ink": "#ffffff"
     },
@@ -73,17 +82,8 @@
       "short": "SOL",
       "rate": 12.15,
       "buy": 10.67,
-      "difference": 0.3,
+      "difference": 0.42,
       "brand": "#6f2da8",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Mercantil Santa Cruz",
-      "short": "BMSC",
-      "rate": 12.15,
-      "buy": 10.75,
-      "difference": 0.3,
-      "brand": "#6b8e23",
       "ink": "#ffffff"
     },
     {
@@ -91,7 +91,7 @@
       "short": "ECO",
       "rate": 12.2,
       "buy": 10.85,
-      "difference": 0.35,
+      "difference": 0.47,
       "brand": "#ef3340",
       "ink": "#ffffff"
     }
