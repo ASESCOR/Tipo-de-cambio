@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T04:53:14.078Z",
-  "sourceReadAt": "20/10, 00:42",
+  "updatedAt": "2026-10-20T11:40:16.051Z",
+  "sourceReadAt": "20/10, 06:44",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -42,15 +42,6 @@
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
-      "rate": 11.99,
-      "buy": 11.39,
-      "difference": 0.29,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
       "name": "BancoSol",
       "short": "SOL",
       "rate": 11.99,
@@ -66,6 +57,15 @@
       "buy": 11.2,
       "difference": 0.3,
       "brand": "#149b49",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12,
+      "buy": 11.4,
+      "difference": 0.3,
+      "brand": "#f59e0b",
       "ink": "#ffffff"
     },
     {
