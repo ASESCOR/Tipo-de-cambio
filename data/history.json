@@ -928,5 +928,15 @@
     "officialUpdatedAt": "2026-10-20T00:00:00.000Z",
     "binanceUpdatedAt": "2026-10-20T21:01:07.610Z",
     "updatedAt": "2026-10-21T00:38:04.893Z"
+  },
+  {
+    "date": "2026-10-21",
+    "label": "21-oct",
+    "usdt": 11.905,
+    "tco": 11.7,
+    "reference": 11.7,
+    "officialUpdatedAt": "2026-10-20T00:00:00.000Z",
+    "binanceUpdatedAt": "2026-10-20T21:01:07.610Z",
+    "updatedAt": "2026-10-21T07:41:04.221Z"
   }
 ]
