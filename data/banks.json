@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-23T07:34:13.483Z",
-  "sourceReadAt": "23/10, 02:51",
+  "updatedAt": "2026-10-23T13:28:20.402Z",
+  "sourceReadAt": "23/10, 08:54",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -15,13 +15,13 @@
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
+      "name": "Banco Bisa",
+      "short": "BISA",
       "rate": 12.05,
-      "buy": 11.45,
+      "buy": 11.14,
       "difference": 0.21,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
+      "brand": "#f2c500",
+      "ink": "#222222"
     },
     {
       "name": "Banco Unión",
@@ -42,15 +42,6 @@
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Bisa",
-      "short": "BISA",
-      "rate": 12.07,
-      "buy": 11.14,
-      "difference": 0.23,
-      "brand": "#f2c500",
-      "ink": "#222222"
-    },
-    {
       "name": "BCP",
       "short": "BCP",
       "rate": 12.14,
@@ -66,6 +57,15 @@
       "buy": 11.34,
       "difference": 0.3,
       "brand": "#149b49",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12.14,
+      "buy": 11.54,
+      "difference": 0.3,
+      "brand": "#f59e0b",
       "ink": "#ffffff"
     },
     {
