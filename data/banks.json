@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-28T08:35:24.242Z",
-  "sourceReadAt": "28/10, 04:08",
+  "updatedAt": "2026-10-28T16:38:51.407Z",
+  "sourceReadAt": "28/10, 12:13",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -15,15 +15,6 @@
       "ink": "#ffffff"
     },
     {
-      "name": "BCP",
-      "short": "BCP",
-      "rate": 12.18,
-      "buy": 11.38,
-      "difference": 0.16,
-      "brand": "#0055b8",
-      "ink": "#ffffff"
-    },
-    {
       "name": "Banco Bisa",
       "short": "BISA",
       "rate": 12.2,
@@ -31,6 +22,15 @@
       "difference": 0.18,
       "brand": "#f2c500",
       "ink": "#222222"
+    },
+    {
+      "name": "BCP",
+      "short": "BCP",
+      "rate": 12.32,
+      "buy": 11.52,
+      "difference": 0.3,
+      "brand": "#0055b8",
+      "ink": "#ffffff"
     },
     {
       "name": "BNB",
