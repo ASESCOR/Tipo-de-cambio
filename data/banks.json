@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-28T22:36:55.709Z",
-  "sourceReadAt": "28/10, 18:17",
+  "updatedAt": "2026-10-29T05:50:50.100Z",
+  "sourceReadAt": "29/10, 01:21",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,8 +8,8 @@
     {
       "name": "Banco FIE",
       "short": "FIE",
-      "rate": 12.12,
-      "buy": 11.12,
+      "rate": 12.22,
+      "buy": 11.22,
       "difference": 0.1,
       "brand": "#df1683",
       "ink": "#ffffff"
@@ -17,46 +17,19 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 12.2,
-      "buy": 11.32,
+      "rate": 12.3,
+      "buy": 11.42,
       "difference": 0.18,
       "brand": "#f2c500",
       "ink": "#222222"
-    },
-    {
-      "name": "BCP",
-      "short": "BCP",
-      "rate": 12.32,
-      "buy": 11.52,
-      "difference": 0.3,
-      "brand": "#0055b8",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "BNB",
-      "short": "BNB",
-      "rate": 12.32,
-      "buy": 11.52,
-      "difference": 0.3,
-      "brand": "#149b49",
-      "ink": "#ffffff"
     },
     {
       "name": "Banco Fortaleza",
       "short": "FOR",
       "rate": 12.32,
       "buy": 11.72,
-      "difference": 0.3,
+      "difference": 0.2,
       "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Ganadero",
-      "short": "GAN",
-      "rate": 12.32,
-      "buy": null,
-      "difference": 0.3,
-      "brand": "#3f7f2f",
       "ink": "#ffffff"
     },
     {
@@ -64,15 +37,42 @@
       "short": "UNI",
       "rate": 12.32,
       "buy": 10.52,
-      "difference": 0.3,
+      "difference": 0.2,
       "brand": "#005aa9",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "BCP",
+      "short": "BCP",
+      "rate": 12.42,
+      "buy": 11.62,
+      "difference": 0.3,
+      "brand": "#0055b8",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "BNB",
+      "short": "BNB",
+      "rate": 12.42,
+      "buy": 11.62,
+      "difference": 0.3,
+      "brand": "#149b49",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Ganadero",
+      "short": "GAN",
+      "rate": 12.42,
+      "buy": null,
+      "difference": 0.3,
+      "brand": "#3f7f2f",
       "ink": "#ffffff"
     },
     {
       "name": "Mercantil Santa Cruz",
       "short": "BMSC",
-      "rate": 12.32,
-      "buy": 10.92,
+      "rate": 12.42,
+      "buy": 11.02,
       "difference": 0.3,
       "brand": "#6b8e23",
       "ink": "#ffffff"
@@ -80,8 +80,8 @@
     {
       "name": "Banco Económico",
       "short": "ECO",
-      "rate": 12.37,
-      "buy": 11.02,
+      "rate": 12.47,
+      "buy": 11.12,
       "difference": 0.35,
       "brand": "#ef3340",
       "ink": "#ffffff"
@@ -91,7 +91,7 @@
       "short": "SOL",
       "rate": 12.52,
       "buy": 10.82,
-      "difference": 0.5,
+      "difference": 0.4,
       "brand": "#6f2da8",
       "ink": "#ffffff"
     }
