@@ -1052,11 +1052,11 @@
   {
     "date": "2026-11-02",
     "label": "02-nov",
-    "usdt": 12.03,
+    "usdt": 12.02,
     "tco": 12.09,
     "reference": 12.09,
-    "officialUpdatedAt": "2026-11-01T00:00:00.000Z",
-    "binanceUpdatedAt": "2026-11-01T21:01:03.382Z",
-    "updatedAt": "2026-11-02T06:07:56.924Z"
+    "officialUpdatedAt": "2026-11-02T00:00:00.000Z",
+    "binanceUpdatedAt": "2026-11-02T15:01:14.773Z",
+    "updatedAt": "2026-11-02T15:57:33.762Z"
   }
 ]
