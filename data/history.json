@@ -1092,11 +1092,11 @@
   {
     "date": "2026-11-06",
     "label": "06-nov",
-    "usdt": 12,
-    "tco": 12,
-    "reference": 12,
-    "officialUpdatedAt": "2026-11-05T00:00:00.000Z",
-    "binanceUpdatedAt": "2026-11-05T21:01:06.693Z",
-    "updatedAt": "2026-11-06T06:49:47.069Z"
+    "usdt": 12.01,
+    "tco": 11.89,
+    "reference": 11.89,
+    "officialUpdatedAt": "2026-11-06T00:00:00.000Z",
+    "binanceUpdatedAt": "2026-11-06T15:01:16.234Z",
+    "updatedAt": "2026-11-06T15:56:05.795Z"
   }
 ]
