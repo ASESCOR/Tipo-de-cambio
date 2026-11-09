@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-09T09:49:39.345Z",
-  "sourceReadAt": "09/11, 05:31",
+  "updatedAt": "2026-11-09T20:46:22.864Z",
+  "sourceReadAt": "09/11, 16:31",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,9 +8,9 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 11.9,
+      "rate": 11.98,
       "buy": 11.11,
-      "difference": 0.09,
+      "difference": 0.17,
       "brand": "#f2c500",
       "ink": "#222222"
     },
