@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-12T09:51:33.556Z",
-  "sourceReadAt": "12/11, 05:13",
+  "updatedAt": "2026-11-12T18:20:38.438Z",
+  "sourceReadAt": "12/11, 14:13",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,27 +8,18 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 11.89,
+      "rate": 11.9,
       "buy": 11,
-      "difference": 0.19,
+      "difference": 0.2,
       "brand": "#f2c500",
       "ink": "#222222"
     },
     {
-      "name": "Banco FIE",
-      "short": "FIE",
-      "rate": 11.9,
-      "buy": 10.7,
-      "difference": 0.2,
-      "brand": "#df1683",
-      "ink": "#ffffff"
-    },
-    {
       "name": "BancoSol",
       "short": "SOL",
-      "rate": 11.96,
-      "buy": 10.54,
-      "difference": 0.26,
+      "rate": 11.95,
+      "buy": 10.53,
+      "difference": 0.25,
       "brand": "#6f2da8",
       "ink": "#ffffff"
     },
@@ -51,12 +42,30 @@
       "ink": "#ffffff"
     },
     {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12,
+      "buy": 11.4,
+      "difference": 0.3,
+      "brand": "#f59e0b",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco Ganadero",
       "short": "GAN",
       "rate": 12,
       "buy": null,
       "difference": 0.3,
       "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Unión",
+      "short": "UNI",
+      "rate": 12,
+      "buy": 10.7,
+      "difference": 0.3,
+      "brand": "#005aa9",
       "ink": "#ffffff"
     },
     {
@@ -69,30 +78,21 @@
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
-      "rate": 12.01,
-      "buy": 11.41,
-      "difference": 0.31,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Unión",
-      "short": "UNI",
-      "rate": 12.01,
-      "buy": 10.21,
-      "difference": 0.31,
-      "brand": "#005aa9",
-      "ink": "#ffffff"
-    },
-    {
       "name": "Banco Económico",
       "short": "ECO",
       "rate": 12.05,
       "buy": 10.7,
       "difference": 0.35,
       "brand": "#ef3340",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco FIE",
+      "short": "FIE",
+      "rate": 12.05,
+      "buy": 10.7,
+      "difference": 0.35,
+      "brand": "#df1683",
       "ink": "#ffffff"
     }
   ]
