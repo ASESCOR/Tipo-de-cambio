@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T09:33:16.167Z",
-  "sourceReadAt": "13/11, 05:13",
+  "updatedAt": "2026-11-13T17:45:26.835Z",
+  "sourceReadAt": "13/11, 13:13",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,18 +8,18 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 11.87,
+      "rate": 11.9,
       "buy": 10.97,
-      "difference": 0.2,
+      "difference": 0.23,
       "brand": "#f2c500",
       "ink": "#222222"
     },
     {
       "name": "BancoSol",
       "short": "SOL",
-      "rate": 11.95,
-      "buy": 10.53,
-      "difference": 0.28,
+      "rate": 11.92,
+      "buy": 10.5,
+      "difference": 0.25,
       "brand": "#6f2da8",
       "ink": "#ffffff"
     },
@@ -42,6 +42,15 @@
       "ink": "#ffffff"
     },
     {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 11.97,
+      "buy": 11.37,
+      "difference": 0.3,
+      "brand": "#f59e0b",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco Ganadero",
       "short": "GAN",
       "rate": 11.97,
@@ -51,30 +60,21 @@
       "ink": "#ffffff"
     },
     {
+      "name": "Banco Unión",
+      "short": "UNI",
+      "rate": 11.97,
+      "buy": 10.67,
+      "difference": 0.3,
+      "brand": "#005aa9",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Mercantil Santa Cruz",
       "short": "BMSC",
       "rate": 11.97,
       "buy": 10.57,
       "difference": 0.3,
       "brand": "#6b8e23",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
-      "rate": 12,
-      "buy": 11.4,
-      "difference": 0.33,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Unión",
-      "short": "UNI",
-      "rate": 12,
-      "buy": 10.7,
-      "difference": 0.33,
-      "brand": "#005aa9",
       "ink": "#ffffff"
     },
     {
