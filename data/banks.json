@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-15T09:28:46.125Z",
-  "sourceReadAt": "15/11, 04:55",
+  "updatedAt": "2026-11-15T17:12:40.105Z",
+  "sourceReadAt": "15/11, 12:55",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -51,6 +51,15 @@
       "ink": "#ffffff"
     },
     {
+      "name": "Banco Ganadero",
+      "short": "GAN",
+      "rate": 11.97,
+      "buy": null,
+      "difference": 0.3,
+      "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco Unión",
       "short": "UNI",
       "rate": 11.97,
@@ -84,15 +93,6 @@
       "buy": 10.67,
       "difference": 0.35,
       "brand": "#df1683",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Ganadero",
-      "short": "GAN",
-      "rate": 11.97,
-      "buy": 11.67,
-      "difference": 0.3,
-      "brand": "#3f7f2f",
       "ink": "#ffffff"
     }
   ]
