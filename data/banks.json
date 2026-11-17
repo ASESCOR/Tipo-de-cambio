@@ -1,19 +1,10 @@
 {
-  "updatedAt": "2026-11-17T13:28:32.122Z",
-  "sourceReadAt": "17/11, 08:55",
+  "updatedAt": "2026-11-17T22:25:53.105Z",
+  "sourceReadAt": "17/11, 18:07",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
   "banks": [
-    {
-      "name": "BancoSol",
-      "short": "SOL",
-      "rate": 11.92,
-      "buy": 10.5,
-      "difference": 0.22,
-      "brand": "#6f2da8",
-      "ink": "#ffffff"
-    },
     {
       "name": "Banco Bisa",
       "short": "BISA",
@@ -24,12 +15,12 @@
       "ink": "#222222"
     },
     {
-      "name": "Banco Unión",
-      "short": "UNI",
-      "rate": 11.97,
-      "buy": 10.67,
-      "difference": 0.27,
-      "brand": "#005aa9",
+      "name": "BancoSol",
+      "short": "SOL",
+      "rate": 11.95,
+      "buy": 10.53,
+      "difference": 0.25,
+      "brand": "#6f2da8",
       "ink": "#ffffff"
     },
     {
@@ -45,7 +36,7 @@
       "name": "BNB",
       "short": "BNB",
       "rate": 12,
-      "buy": 11.2,
+      "buy": 11.7,
       "difference": 0.3,
       "brand": "#149b49",
       "ink": "#ffffff"
@@ -66,6 +57,15 @@
       "buy": null,
       "difference": 0.3,
       "brand": "#3f7f2f",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Unión",
+      "short": "UNI",
+      "rate": 12,
+      "buy": 10.7,
+      "difference": 0.3,
+      "brand": "#005aa9",
       "ink": "#ffffff"
     },
     {
