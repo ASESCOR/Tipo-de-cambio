@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-19T00:24:17.085Z",
-  "sourceReadAt": "18/11, 19:55",
+  "updatedAt": "2026-11-19T10:23:09.929Z",
+  "sourceReadAt": "19/11, 05:55",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -8,26 +8,17 @@
     {
       "name": "Banco Bisa",
       "short": "BISA",
-      "rate": 11.88,
-      "buy": 11.05,
+      "rate": 11.81,
+      "buy": 10.98,
       "difference": 0.13,
       "brand": "#f2c500",
       "ink": "#222222"
     },
     {
-      "name": "BancoSol",
-      "short": "SOL",
-      "rate": 12,
-      "buy": 10.58,
-      "difference": 0.25,
-      "brand": "#6f2da8",
-      "ink": "#ffffff"
-    },
-    {
       "name": "BCP",
       "short": "BCP",
-      "rate": 12.05,
-      "buy": 11.25,
+      "rate": 11.98,
+      "buy": 11.18,
       "difference": 0.3,
       "brand": "#0055b8",
       "ink": "#ffffff"
@@ -35,53 +26,44 @@
     {
       "name": "BNB",
       "short": "BNB",
-      "rate": 12.05,
-      "buy": 11.75,
+      "rate": 11.98,
+      "buy": 11.68,
       "difference": 0.3,
       "brand": "#149b49",
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Fortaleza",
-      "short": "FOR",
-      "rate": 12.05,
-      "buy": 11.45,
-      "difference": 0.3,
-      "brand": "#f59e0b",
-      "ink": "#ffffff"
-    },
-    {
       "name": "Banco Ganadero",
       "short": "GAN",
-      "rate": 12.05,
+      "rate": 11.98,
       "buy": null,
       "difference": 0.3,
       "brand": "#3f7f2f",
       "ink": "#ffffff"
     },
     {
-      "name": "Banco Unión",
-      "short": "UNI",
-      "rate": 12.05,
-      "buy": 10.75,
-      "difference": 0.3,
-      "brand": "#005aa9",
-      "ink": "#ffffff"
-    },
-    {
       "name": "Mercantil Santa Cruz",
       "short": "BMSC",
-      "rate": 12.05,
-      "buy": 10.65,
+      "rate": 11.98,
+      "buy": 10.58,
       "difference": 0.3,
       "brand": "#6b8e23",
       "ink": "#ffffff"
     },
     {
+      "name": "BancoSol",
+      "short": "SOL",
+      "rate": 12,
+      "buy": 10.58,
+      "difference": 0.32,
+      "brand": "#6f2da8",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco Económico",
       "short": "ECO",
-      "rate": 12.1,
-      "buy": 10.75,
+      "rate": 12.03,
+      "buy": 10.68,
       "difference": 0.35,
       "brand": "#ef3340",
       "ink": "#ffffff"
@@ -89,10 +71,28 @@
     {
       "name": "Banco FIE",
       "short": "FIE",
-      "rate": 12.1,
-      "buy": 10.75,
+      "rate": 12.03,
+      "buy": 10.68,
       "difference": 0.35,
       "brand": "#df1683",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Fortaleza",
+      "short": "FOR",
+      "rate": 12.05,
+      "buy": 11.45,
+      "difference": 0.37,
+      "brand": "#f59e0b",
+      "ink": "#ffffff"
+    },
+    {
+      "name": "Banco Unión",
+      "short": "UNI",
+      "rate": 12.05,
+      "buy": 10.75,
+      "difference": 0.37,
+      "brand": "#005aa9",
       "ink": "#ffffff"
     }
   ]
