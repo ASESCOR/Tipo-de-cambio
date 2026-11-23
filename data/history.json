@@ -1262,11 +1262,11 @@
   {
     "date": "2026-11-23",
     "label": "23-nov",
-    "usdt": 12,
+    "usdt": 11.945,
     "tco": 11.75,
     "reference": 11.75,
-    "officialUpdatedAt": "2026-11-22T00:00:00.000Z",
-    "binanceUpdatedAt": "2026-11-22T21:02:07.920Z",
-    "updatedAt": "2026-11-23T07:41:39.986Z"
+    "officialUpdatedAt": "2026-11-23T00:00:00.000Z",
+    "binanceUpdatedAt": "2026-11-23T20:01:21.862Z",
+    "updatedAt": "2026-11-23T20:15:59.574Z"
   }
 ]
