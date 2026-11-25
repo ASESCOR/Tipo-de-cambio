@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-24T17:47:39.163Z",
-  "sourceReadAt": "24/11, 12:55",
+  "updatedAt": "2026-11-25T02:30:42.235Z",
+  "sourceReadAt": "24/11, 22:02",
   "source": "https://www.dolarbluebolivia.click/bancos/",
   "automatic": true,
   "note": "Precios publicados por cada banco y obtenidos automáticamente de Dólar Blue Bolivia. El valor en ventanilla o aplicación puede ser distinto.",
@@ -78,21 +78,21 @@
       "ink": "#ffffff"
     },
     {
+      "name": "Banco Económico",
+      "short": "ECO",
+      "rate": 12.13,
+      "buy": 10.78,
+      "difference": 0.35,
+      "brand": "#ef3340",
+      "ink": "#ffffff"
+    },
+    {
       "name": "Banco FIE",
       "short": "FIE",
       "rate": 12.13,
       "buy": 10.78,
       "difference": 0.35,
       "brand": "#df1683",
-      "ink": "#ffffff"
-    },
-    {
-      "name": "Banco Económico",
-      "short": "ECO",
-      "rate": 12.1,
-      "buy": 10.75,
-      "difference": 0.32,
-      "brand": "#ef3340",
       "ink": "#ffffff"
     }
   ]
